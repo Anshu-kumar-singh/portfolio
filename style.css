@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.nav-button{
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: #D3D3D3;
+    font-size: 13px;
+    padding: 5px;
+    margin-right: 15px;
+    transition-duration: 0.5s;
+}
+.nav-button:hover{
+    font-size: 15px;
+}
+
+.Nav-bar {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex; /* put all item in one line */
+    align-items: center; /* Vertically centers items */
+}
+
+.work {
+    color: white;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+/* --- THIS IS THE FIX --- */
+/* This one rule pushes "Home" and everything after it to the right */
+.Home {
+    margin-left: auto;
+    color: white;
+}
+.welcome {
+    position: relative;
+}
+
+.back-ground {
+    background-image: url('code/me3.jpg');
+    background-size: cover;
+    height: 639px;
+    width: 100vw;
+    top: 100px;
+}
+
+#text1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+
+    position: absolute;
+    z-index: 2; /* Ensures it's on top */
+    top: 142px;  /* margine to the top ko replace */
+    left: 166px; 
+}
+#text2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+    position: absolute;
+    z-index: 2;
+    top: 224px;  
+    left:266px; 
+}
+
+.view-work {
+    position: absolute;
+    z-index: 2;
+    top: 349px;  
+    left: 128px;
+}
+
+.view-work-button {
+    
+    background-color: black;
+    color: white;         
+    border: 2px solid #283546; 
+    border-radius: 12px;
+    
+    font-size: 16px;  
+    padding: 10px 20px;   
+    transition-duration: 0.5s;
+}
+.view-work-button:hover{
+    background-color: white;
+    color: black;
+}
+.get-in{
+    position: absolute;
+    z-index: 2;
+    top: 349px;  
+    left: 531px;
+}
+
+.get-in-touch {
+    
+    background-color: black;
+    color: white;       
+    border: 2px solid #283546; 
+    border-radius: 12px;
+    
+    font-size: 16px;  
+    padding: 10px 20px;   
+    transition-duration: 0.5s;
+}
+.get-in-touch:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* slide 3 */
+
+
+.About-me {
+    background-image: url('code/background.jpg');
+    width: 100vw;
+    height: 850px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.back-ground2 {
+    align-items: center;
+    margin-right: 150px;
+    width: 60%;
+}
+
+.text11 {
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    width: 100%;
+    justify-content: center;
+    padding-right: 382px;
+    display: flex;
+    margin-top: 50px;
+}
+.text22 {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    margin-top: 50px;
+}
+.text33{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 200px;
+    text-align: center;
+    margin-top: 50px;
+}
+.text44{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 200px;
+    text-align:center ;
+    margin-top: 50px;
+}
+.text55 {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    padding-left: 200px;
+    margin-top: 50px;
+}
+.text55 p{
+    padding-left: 200px;
+}
+
+.sk{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    
+}
+/* This part enables the smooth animation */
+.skills img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease; 
+}
+
+/* This part does the 3D flip on hover */
+.skills:hover img {
+    transform: rotateY(360deg);
+}
+
+.sk .skills{
+    margin: 15px;
+}
+.together1{
+    height: 50px;
+    width: 220px;
+    font-size: 20px;
+    font-weight: 200;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    background-color: #000000; 
+    color: rgb(255, 255, 255);
+    margin-left: 70px;
+    
+}
+/* Style for the container around the image */
+.my-img {
+    width: 300px;
+    height: 300px; 
+    border-radius: 50%;
+    overflow: hidden; 
+
+    /* This creates the purple border effect using a gradient background on the container */
+    background:white; 
+    padding: 5px; /* Adjust this value to change the thickness of the border */
+    
+    position: absolute;
+    top: 1032px;
+    left: 100px;
+}
+
+/* Style for the actual image inside the container */
+.my-img img {
+    width: 100%; /* Make the image fill its circular container */
+    height: 100%; /* Make the image fill its circular container */
+    object-fit: cover; /* This is crucial! It crops the image to cover the area without distorting it */
+    border-radius: 50%; /* Apply border-radius to the image itself to ensure smooth edges */
+    display: block; /* Removes any extra space below the image */
+}
+.projects{
+    height: 1150px;
+    width: 100%;
+    background-image: url('code/background.jpg');
+    color: #E2E8F0;
+}
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px; 
+}
+
+.item {
+    height: 320px;
+    width: 400px;
+    background-color: rgb(30, 41, 59);
+    border: 1px solid rgb(71, 85, 105);
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 45px;
+    border-radius: 10px;
+    color: #E2E8F0;
+}
+.item p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #A0AEC0;
+}
+.item h3{
+    margin-top: 30px;
+    color: #FFFFFF;
+}
+.item button{
+    font-size: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #00C9A7;
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.Code button{
+    background-color: rgb(51, 65, 85);
+    color: #CBD5E1;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 8px 35px 8px 35px;
+    margin-top: 40px;
+    margin-right: 20px;
+    border: 1px solid rgb(71, 85, 105);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.Code button:hover{
+    background-color: #9370DB;
+    color: #000000;
+}
+.pj{
+    font-size: 20px;
+    font-weight: 500;
+    color: white; 
+    margin-left: 640px;
+    padding-top: 50px;
+    
+}
+.pj1 p{
+    color: #CBD5E1;
+    margin-left: 520px;
+    font-size: 18px;
+    padding-top: 20px;
+
+    
+}
+
+.jp{
+    font-size: 20px;
+    font-weight: 500;
+    color: #CBD5E1;
+    padding-top: 48px;
+    margin-left: 550px;
+    
+}
+.jp button{
+    background-color: rgb(30, 29, 29);
+    border: 2px solid #9370DB;
+    border-radius: 6px;
+    padding: 15px 20px 15px 20px;
+    color:  #9370DB;
+    margin-top: 25px;
+    margin-left: 114px;
+    transition-duration: 0.5s;
+}
+.jp button:hover {
+  background-color:  #9370DB;
+  color: black;
+}
+.Contact-Me {
+    height: 750px;
+    width: 100%;
+    background-image: url('code/background.jpg');
+    display: flex;
+    flex-direction: column;/* see */
+    align-items: center;
+}
+.touch{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+.touch p{
+    color: #CBD5E1;
+    padding-top: 10px;
+}
+
+
+.Details {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.connect h2{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+.connect p{
+    margin-top: 20px;
+    text-align: center;
+    color: #CBD5E1;
+}
+.Email h6{
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: white ;
+    margin-left: 65px;
+}
+.Email p{
+    font-size: 20px;
+    color:#CBD5E1 ;
+    margin-top: 5px;
+    text-align: left;
+}
+.phone h6{
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: white ;
+    margin-left: 65px;
+}
+.phone p{
+    font-size: 20px;
+    color:#CBD5E1 ;
+    margin-top: 5px;
+    text-align: left;
+}
+.Location h6{
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: white ;
+    margin-left: 65px;
+}
+.Location p{             /* we are using class so there should be no need of styling all in diff way */
+    font-size: 20px;
+    color:#CBD5E1 ;
+    margin-top: 5px;
+    text-align: left;
+}
+.Fill{
+    color: white;
+    text-align: center;
+    /* font-size: 10px; */
+}
+
+#name-details{
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    height: 50px;
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.Name-input p{
+    text-align: center;
+    margin-top: 10px;
+}
+#message{
+    background-color: rgb(206, 205, 205);/* i want put the the text inside this in upward direction */
+    color: rgb(0, 0, 0);
+    height: 150px;
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.send-message{
+    height: 50px;
+    width: 600px;
+    background-color: #8B5CF6;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+.send-message h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-section {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.Social i {
+    height: 55px;
+    width: 40px;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 10px 5px 10px 5px;
+    font-size: 32px;
+    color: white;
+    margin: 5px 12px;
+}
+.Social-contact{
+    display: flex;
+    justify-content: center; 
+    margin-top: 60px;
+
+}
+/* 1. Make the main .end container a flexbox */
+.end {
+  height: 120px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+
+  /* 👇 ADD THESE 5 LINES 👇 */
+  display: flex;
+  flex-direction: column;   /* Stack children vertically */
+  justify-content: center; /* Center them vertically */
+  align-items: center;     /* Center them horizontally */
+  gap: 20px;               /* Adds 10px space between children */
+}
+
+
+.end p {
+  color: rgb(197, 197, 197);
+  margin: 0;
+}
+
+.end a {
+  color: rgb(197, 197, 197);
+  padding: 10px 8px; 
+  text-decoration: none;
+}
